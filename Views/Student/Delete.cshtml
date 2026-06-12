@@ -1,0 +1,23 @@
+﻿@model Student
+
+<h2>Xác nhận xóa</h2>
+
+<p>Bạn có chắc muốn xóa sinh viên:</p>
+
+<b>@Model.Name</b>
+
+<form asp-action="DeleteConfirmed">
+
+    <input type="hidden"
+           name="id"
+           value="@Model.Id" />
+
+    <button class="btn btn-danger">
+        Xóa
+    </button>
+
+</form>
+
+<a asp-action="Index">
+    Hủy
+</a>

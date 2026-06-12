@@ -1,0 +1,29 @@
+﻿@model Student
+
+<form asp-action="Edit">
+
+    <input asp-for="Id" type="hidden" />
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone"></span>
+    </div>
+
+    <button class="btn btn-warning mt-2">
+        Update
+    </button>
+
+</form>
